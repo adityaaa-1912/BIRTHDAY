@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Monika 🎂</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f6e7e1, #f3d9e8, #e8ddf6);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      animation: fadeInDown 2s ease;
+    }
+
+    .hero h2 {
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 1.4rem;
+      animation: fadeInUp 2s ease;
+    }
+
+    /* MESSAGE SECTION */
+    .message {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      animation: fadeIn 2s ease;
+    }
+
+    .message p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* GALLERY PLACEHOLDER */
+    .gallery {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .photo {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.5);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* CONFETTI */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: pink;
+      top: -10px;
+      animation: fall linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      to { transform: translateY(110vh) rotate(360deg); }
+    }
+
+    @keyframes heartFloat {
+      from { opacity: 1; transform: translateY(0) scale(1); }
+      to { opacity: 0; transform: translateY(-120px) scale(1.5); }
+    }
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero h2 { font-size: 1.1rem; }
+      .message p { font-size: 1rem; }
+    }
+
+    /* FINAL POLISH EFFECTS */
+    .glow {
+      position:absolute;
+      width:300px;
+      height:300px;
+      background: radial-gradient(circle, rgba(255,200,150,0.5), transparent 70%);
+      top:20%;
+      left:50%;
+      transform:translateX(-50%);
+      animation: pulse 4s ease-in-out infinite;
+      z-index:-1;
+    }
+
+    @keyframes pulse {
+      0%,100% { transform:translateX(-50%) scale(1); opacity:0.6; }
+      50% { transform:translateX(-50%) scale(1.2); opacity:0.9; }
+    }
+
+    .final-text {
+      text-align:center;
+      font-size:1.2rem;
+      margin:40px auto;
+      opacity:0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 2s;
+    }
+      .hero h2 { font-size: 1.1rem; }
+      .message p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MUSIC -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HERO -->
+  <section class="hero" style="position:relative; overflow:hidden;">
+    <div class="glow"></div>
+    <h1>Happy Birthday 🎂</h1>
+    <h2>Monika 💖</h2>
+  </section>
+
+  <!-- MESSAGE -->
+  <section class="message">
+    <p>
+      <strong>Happy Birthday, Momo 🫶</strong><br><br>
+      aap chahe kuch bhi kaho aaj ka din sach me bohot special hai kyuki aaj aapka birthday hai.<br>
+      i hope aaj kaa din aapkaaa bohot achaaa jayeee 🤍<br><br>
+
+      aapki smile bohot pyari hai, aap jab apni hasne wali photos bhejtee ho toh sach mai aur better lagne lagta hai.
+      Aur aap ki aankhein hayeeee 😭 sachhii itniii pyariiii, unme ek alg hi warmth hai lagta hai bass dekhte raho.
+      aur aapke lips bhi 😭<br><br>
+
+      aap poore hi bohot ache ho, aapki presence mere life mai boht bohot matter krti hai.
+      literally mai humesha aapke baare mai hi sochta rehta hun — subah uthte hi raat mai sone tk,
+      har waqt har chiz aapki yaad dilati haiii 💕<br><br>
+
+      i hope aap ki life mai jo chize ho rahi hai, aapki health wageraa sab saahiiii ho jayeeee.
+      nd aap humesha khush rahooo, humeshaa healthyy rahooo — aap yh sab deserve krte hooo 💌<br><br>
+
+      <strong>Once again, Happy Birthday, Momo 🎂🤍</strong>
+    </p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+  <img class="photo" src="./img1.jpg">
+  <img class="photo" src="./img2.jpg">
+  <img class="photo" src="./img3.jpg">
+  <img class="photo" src="./img4.jpg">
+  <img class="photo" src="./img5.jpg">
+  <img class="photo" src="./img6.jpg">
+  <img class="photo" src="./img7.jpg">
+  <img class="photo" src="./img8.jpg">
+  <img class="photo" src="./img9.jpg">
+</section>
+
+  <!-- CAKE CUT SECTION -->
+<section class="message" style="text-align:center; margin-top:20px;">
+  <h3>🎂 Cut the Cake Momo 🎂</h3>
+  <img id="cake" src="cake.png" style="width:220px;cursor:pointer;transition:transform 0.4s ease;" alt="Birthday Cake">
+  <p id="cakeText" style="margin-top:15px; font-size:1rem; display:none;">Yayyy 🎉 Cake cut ho gayaaa 💖</p>
+</section>
+
+<footer>
+    Made with ❤️ for Monika
+  </footer>
+
+<div class="final-text">From someone who loves you more than words can say 🤍</div>
+
+  <script>
+    // MUSIC BUTTON
+    const audio = document.querySelector('audio');
+    audio.pause();
+
+    const btn = document.createElement('button');
+    btn.innerText = 'Tap to play music 🎶';
+    btn.style.position = 'fixed';
+    btn.style.bottom = '20px';
+    btn.style.right = '20px';
+    btn.style.padding = '10px 16px';
+    btn.style.borderRadius = '20px';
+    btn.style.border = 'none';
+    btn.style.background = '#f3b5c8';
+    btn.style.color = '#333';
+    btn.style.fontWeight = '600';
+    btn.style.cursor = 'pointer';
+    document.body.appendChild(btn);
+
+    btn.onclick = () => {
+      audio.play();
+      btn.style.display = 'none';
+    };
+
+    // CONFETTI
+    for (let i = 0; i < 60; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.animationDuration = 3 + Math.random() * 5 + 's';
+      confetti.style.background = ['#f3b5c8', '#d6c1f5', '#f7d9c4'][Math.floor(Math.random()*3)];
+      document.body.appendChild(confetti);
+    }
+
+    // CAKE CUT
+    const cake = document.getElementById('cake');
+    const cakeText = document.getElementById('cakeText');
+    cake.onclick = () => {
+      cake.style.transform = 'scale(1.15) rotate(-8deg)';
+      cakeText.style.display = 'block';
+
+      // hearts burst
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.innerHTML = '💖';
+        heart.style.position = 'fixed';
+        heart.style.left = cake.getBoundingClientRect().left + 100 + 'px';
+        heart.style.top = cake.getBoundingClientRect().top + 50 + 'px';
+        heart.style.fontSize = '20px';
+        heart.style.animation = 'heartFloat 2s ease forwards';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 2000);
+      }
+    };
+
+    // LIGHTBOX
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.onclick = () => {
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = 0;
+        overlay.style.left = 0;
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';
+        overlay.style.background = 'rgba(0,0,0,0.8)';
+        overlay.style.display = 'flex';
+        overlay.style.alignItems = 'center';
+        overlay.style.justifyContent = 'center';
+        overlay.onclick = () => overlay.remove();
+
+        const bigImg = document.createElement('img');
+        bigImg.src = img.src;
+        bigImg.style.maxWidth = '90%';
+        bigImg.style.maxHeight = '90%';
+        bigImg.style.borderRadius = '20px';
+
+        overlay.appendChild(bigImg);
+        document.body.appendChild(overlay);
+      }
+    });
+    // CONFETTI GENERATOR
+    for (let i = 0; i < 60; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.animationDuration = 3 + Math.random() * 5 + 's';
+      confetti.style.background = ['#f3b5c8', '#d6c1f5', '#f7d9c4'][Math.floor(Math.random()*3)];
+      document.body.appendChild(confetti);
+    }
+  </script>
+
+</body>
+</html>
